@@ -1,0 +1,307 @@
+/*To add Nunito font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap%27');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    width: 100vw;
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 40px 50px 40px;
+    background-color: #efefef;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+}
+
+footer h2 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #333333;
+}
+
+footer ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+footer ul {
+    margin-bottom: 70px;
+    list-style: none;
+    font-weight: 400;
+}
+
+footer ul li {
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #8D8D8D;
+}
+
+footer .trade-mark h6 {
+    font-size: 12px;
+    line-height: 16px;
+    color: #8D8D8D;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+}
+
+.logo-pic {
+    object-fit: cover;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 33px;
+    height: 33px;
+    left: 40px;
+    top: 40px;
+}
+
+.logo h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+section h3 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    /* identical to box height, or 133% */
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+
+/* The animation code */
+
+@keyframes MyChoice {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+section.choice .content {
+    height: 508px;
+    background: #F9BDBD;
+    animation-name: MyChoice;
+    animation-duration: 60s;
+}
+
+section.about p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140.62%;
+    /* or 28px */
+    text-align: justify;
+    color: #000000;
+    width: 740px;
+}
+
+section.about p:not(:last-child) {
+    margin-bottom: 28px;
+}
+
+main section.about {
+    margin-bottom: 83px;
+}
+
+main {
+    /* padding: 0 40px 270px 40px; */
+    padding-bottom: 270px;
+}
+
+main section {
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+section.languages ul {
+    list-style-position: inside;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140.62%;
+    /* or 28px */
+    text-align: justify;
+    color: #000000;
+}
+
+section.hero {
+    display: flex;
+    background: #F9BDBD;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 83px 40px;
+    gap: 40px;
+}
+
+section.hero .hero-img {
+    width: 426px;
+}
+
+section.hero .hero-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+section.hero .hero-text h1 {
+    margin-bottom: 16px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
+    color: #3E3F43;
+}
+
+section.hero .hero-text h4 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+section.exercises .cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.exercises .cards-container .card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    padding-bottom: 40px;
+    border-radius: 25px;
+    width: 200px;
+    height: 264px;
+    font-family: 'Nunito';
+}
+
+section.exercises .cards-container .card:nth-child(1) {
+    background-color: #FDEDE5;
+}
+
+section.exercises .cards-container .card:nth-child(2) {
+    background-color: #EBF1FF;
+}
+
+section.exercises .cards-container .card:nth-child(3) {
+    background-color: #EBFFEC;
+}
+
+section.exercises .cards-container .card:nth-child(4) {
+    background-color: #FFEBFC;
+}
+
+section.exercises .cards-container .card:nth-child(5) {
+    background-color: #FFFEEB;
+}
+
+section.exercises .cards-container .card .card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+section.exercises .cards-container .card button {
+    background-color: #FFFF;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    width: 120px;
+    padding: 8px 16px;
+    color: #171F46;
+    font-size: 14px;
+}
+
+section.exercises .cards-container .card h5 {
+    margin-bottom: 32px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    color: #000000;
+}
+
+section.exercises .cards-container .card .card-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+section.exercises .cards-container .card button:hover {
+    background-color: #171F46;
+}
+
+section.exercises .cards-container .card:nth-child(1) button:hover {
+    color: #FDEDE5;
+}
+
+section.exercises .cards-container .card:nth-child(2) button:hover {
+    color: #EBF1FF;
+}
+
+section.exercises .cards-container .card:nth-child(3) button:hover {
+    color: #EBFFEC;
+}
+
+section.exercises .cards-container .card:nth-child(4) button:hover {
+    color: #FFEBFC;
+}
+
+section.exercises .cards-container .card:nth-child(5) button:hover {
+    color: #FFFEEB;
+}
