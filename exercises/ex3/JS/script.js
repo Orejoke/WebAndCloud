@@ -1,21 +1,21 @@
-var container;
-var size;
+let container;
+let size;
 const letters = ["G", "A", "M", "E"];
-var shuffledLetters = shuffle(letters.concat(letters));
-var selectedSquares = [];
+let shuffledLetters = shuffle(letters.concat(letters));
+let selectedSquares = [];
 
 window.onload = function(event) {
     container = document.getElementById("boxes-layout3");
     size = 80;
 
-    for (var i = 0; i < 7; i++) {
-        var square = document.createElement("div");
+    for (let i = 0; i < 7; i++) {
+        let square = document.createElement("div");
         square.id = "square-" + i;
         square.style.width = size + "px";
         square.style.height = size + "px";
         square.style.backgroundColor = "black";
 
-        var letter = document.createElement("div");
+        let letter = document.createElement("div");
         letter.innerHTML = shuffledLetters[i];
         letter.style.color = "white";
         letter.style.fontSize = "50px";
@@ -53,8 +53,8 @@ window.onload = function(event) {
         });
     }
     document.getElementById("add-sqr").addEventListener("click", function() {
-        for (var j = 0; j < 3; j++) {
-            var square = document.createElement("div");
+        for (let j = 0; j < 3; j++) {
+            let square = document.createElement("div");
             square.style.width = size + "px";
             square.style.height = size + "px";
             square.style.backgroundColor = "black";
@@ -66,7 +66,7 @@ window.onload = function(event) {
 
 
 function shuffle(array) {
-    var currentIndex = array.length,
+    let currentIndex = array.length,
         randomIndex;
 
     // While there remain elements to shuffle
